@@ -24,7 +24,7 @@ export default function Footer() {
         </p>
       </div>
       <div className="flex flex-col items-center mt-4 md:mt-0 md:items-start">
-        <Link className="flex text-nowrap gap-2" href={"https://github.com/JhojanGgarcia/FigmaDesigns"}>
+        <Link className="flex text-nowrap gap-2" href={"https://github.com/JhojanGgarcia/Designs"}>
           <Image src="/github.svg" alt="GitHub" width={30} height={30} />
           Stars On GitHub
         </Link>
