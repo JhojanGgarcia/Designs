@@ -111,8 +111,10 @@ const Modal = ({ isOpen, closeModal }) => {
           className="bg-black relative border-2 border-white/5 overflow-hidden  flex items-center justify-center flex-col p-6 rounded-xl shadow-lg"
           onClick={handleModalClick}
         >
-          <span className="absolute bottom-0 left-4 inset-x-1 h-[1.5px] dark:bg-gradient-to-r w-44 dark:from-fuchsia-400/0 dark:via-white/10 "></span>
+          <span className="absolute bottom-0 left-4 inset-x-1 h-[1.5px] dark:bg-gradient-to-r w-44 dark:from-fuchsia-400/0 dark:via-white/10 "/>
+          
           <div className="absolute w-14 h-14 top-0 left-0 bg-white blur-3xl opacity-80" />
+          <div className="absolute w-14 h-14 bottom-0 right-0 bg-white blur-3xl opacity-80" />
           <h2 className="text-2xl text-white mb-4">Send me a message</h2>
           <p className="mb-4 text-white/50">
             Fill in the fields below and I will contact you to help you with
@@ -137,7 +139,7 @@ const Modal = ({ isOpen, closeModal }) => {
                   style={{
                     border:
                       hoveredIndex === i
-                        ? "3px solid rgba(255, 255, 255, 0.5)"
+                        ? "3px solid rgba(255, 255, 255, 0.1)"
                         : "none",
                     opacity: 1,
                     WebkitMaskImage:
@@ -150,7 +152,7 @@ const Modal = ({ isOpen, closeModal }) => {
                         : "none",
                   }}
                   aria-hidden="true"
-                  className=" pointer-events-none absolute left-0 top-0 z-10 h-full w-full cursor-default rounded-xl border bg-[transparent] p-3.5 opacity-0  transition-opacity duration-500 placeholder:select-none"
+                  className=" pointer-events-none absolute left-0 top-0 z-10 h-full w-full cursor-default rounded-xl border bg-[transparent] p-1 opacity-0 transition-opacity duration-500 placeholder:select-none"
                 />
               </motion.div>
             ))}
