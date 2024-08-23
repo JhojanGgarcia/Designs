@@ -6,11 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Card() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [positions, setPositions] = useState({});
-
-
-
-  const handleMouseMove = (e, index) => {
+  const [positions, setPositions] = useState({});  const handleMouseMove = (e, index) => {
     const rect = e.currentTarget.getBoundingClientRect();
     setPositions((prevPositions) => ({
       ...prevPositions,
