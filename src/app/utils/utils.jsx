@@ -6,6 +6,7 @@ import motion from "@/app/assets/motion.png";
 import rous from "@/app/assets/rous.png";
 import slug from "@/app/assets/slug.png";
 import motionNumber from "@/app/assets/motionNumber.png";
+import newBanner from "@/app/assets/logoBanner.png";
 
 export const images = [
   { src: banner },
@@ -16,6 +17,7 @@ export const images = [
   { src: rous },
   { src: slug },
   { src: motionNumber },
+  { src: newBanner },
 ];
 
 export const inputs = [
@@ -32,4 +34,3 @@ export const inputs = [
     placeholder: "Enter your message...",
   },
 ];
-
